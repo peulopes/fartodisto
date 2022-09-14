@@ -28,17 +28,17 @@ import { MatButtonModule } from '@angular/material/button';
   template: `
   <mat-drawer-container class="example-container">
   <mat-drawer mode="side" opened>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> dashboard </mat-icon>Dashboard</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> dashboard </mat-icon>Dashboard<mat-icon class="aligned-with-icon-relative-end" >keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> business_center </mat-icon>Business</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> business_center </mat-icon>Business<mat-icon >keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> insert_chart</mat-icon>Analytics</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> insert_chart</mat-icon>Analytics<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> settings</mat-icon>Configuration</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> settings</mat-icon>Configuration<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> important_devices</mat-icon>CIBS Payment Gateway</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> important_devices</mat-icon>CIBS Payment Gateway<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
-  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> assignment_turned_in</mat-icon>Events and Audits</button>
+  <button mat-flat-button class="example-button"><mat-icon class="aligned-with-icon-relative"> assignment_turned_in</mat-icon>Events and Audits<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-divider></mat-divider>
   </mat-drawer>
   <mat-drawer-content>
@@ -112,16 +112,26 @@ import { MatButtonModule } from '@angular/material/button';
 
       .aligned-with-icon-relative{
         position: relative;
+        display:flex;
         margin-top: -5px;
         margin-left: 10px; /* optional */
         margin-right: 25px;
+        align-items: right;
     }
     .aligned-with-icon-relative-dash{
       position: relative;
       margin-top: -5px;
       margin-left: 10px; /* optional */
       margin-right: 20px;
-  }
+    }
+    .aligned-with-icon-relative-end{
+      position: relative;
+      display: flex;
+        margin-top: -5px;
+        margin-left: 10px; /* optional */
+        margin-right: 25px;
+        align-items: right;
+    }
 
       .toolbar {
         position: fixed;
